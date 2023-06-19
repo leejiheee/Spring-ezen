@@ -1,0 +1,20 @@
+package com.example.board2.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.board2.dto.Board;
+
+@Service
+public class BoardServiceImpl implements BoardService{
+
+	@Override
+	public int maxNum() throws Exception {
+		return 0;
+	}
+
+	@Override
+	public void insertData(Board board) throws Exception {
+		
+	}
+	
+}

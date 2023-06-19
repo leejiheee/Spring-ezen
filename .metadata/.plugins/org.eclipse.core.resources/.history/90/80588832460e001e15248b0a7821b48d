@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.board2.dao.BoardDao">
+	<select id="maxNum" resultType="int">
+		select nvl(max(num), 0 ) from board
+	</select>
+	
+	<insert id="insertData" parameterType="Board">
+		insert into board values(1, '지히', '1111', 'jihee@naver.com', '제목', '내용', '111', 10, sysdate)
+	</insert>
+</mapper>
