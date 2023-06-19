@@ -1,0 +1,10 @@
+package com.example.board2.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller //1. controller 역할 클래스 2. bean 객체가 된다. 
+@RequestMapping
+public class thymeleafExController {
+	
+}

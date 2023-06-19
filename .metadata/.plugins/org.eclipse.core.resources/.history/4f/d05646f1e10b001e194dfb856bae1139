@@ -1,0 +1,2 @@
+#Live Reload
+spring.devtools.livereload.enabled=true

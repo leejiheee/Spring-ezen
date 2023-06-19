@@ -1,0 +1,13 @@
+package com.example.board2.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller //1. controller 역할 클래스 2. bean 객체가 된다. 
+@RequestMapping(value = "/thymeleaf")
+public class thymeleafExController {
+	public String thymeleafExample01(Model model) {
+		model addAttribute("data", "타임리프 예제입니다.");
+	}
+}

@@ -1,0 +1,21 @@
+package com.Example.springquiz.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.Example.springquiz.dto.Student;
+import com.Example.springquiz.service.StudentService;
+
+public class StudentController {
+	
+	@Autowired
+	StudentService studentService;
+	
+	@GetMapping ("/student")
+	public List<Student> main() {
+		List<Student> list = studentService.selectList();
+		return list;
+	}
+}

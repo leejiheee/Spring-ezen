@@ -1,0 +1,8 @@
+package com.example.board2.dto;
+
+public class Board {
+	private int num;
+	private String name;
+	private String pwd;
+	private String subject; 
+}
